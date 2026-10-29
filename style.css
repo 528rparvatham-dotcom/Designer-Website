@@ -1,6 +1,16 @@
 body {
-    background-image: url('Gemini_Generated_Image_a471tya471tya471.jpg');
+    background-image: url('img/Gemini_Generated_Image_a471tya471tya471.jpg');
     background-size: cover;
+    background-attachment: fixed; 
+}
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.content-wrapper {
+    background-color: rgba(255, 255, 255, 0.92);
 }
 
 .coca-navbar {
