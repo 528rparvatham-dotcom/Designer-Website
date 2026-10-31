@@ -6,14 +6,13 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.gaudi-navbar {
-    position: sticky;             
+.coca-navbar {
     background-color: rgba(28, 28, 28, 0.95);
-    padding: 12px 20px 18px;      
+    padding: 12px 20px 18px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-.gaudi-navbar::after {
+.coca-navbar::after {
     content: "";
     position: absolute;
     left: 0;
@@ -29,16 +28,16 @@ body {
     );
 }
 
-.gaudi-brand {
+.iconlink {
     font-family: 'Playfair Display', Georgia, serif;
     font-size: 26px;
     font-weight: 700;
     color: #e6c260;
+    text-decoration: none;
     letter-spacing: 1px;
 }
 
-
-.gaudi-navbar .navbar-nav .nav-link {
+.coca-navbar .coca-link {
     --tile: #e6c260;
     --tile-text: #000;
     display: flex;
@@ -52,20 +51,20 @@ body {
     color: #fdfaf3;
     background-color: rgba(255, 255, 255, 0.05);
     border: 2px solid var(--tile);
-    border-radius: 30px 8px 30px 8px;   
+    border-radius: 30px 8px 30px 8px;
     transition: all 0.35s ease;
 }
 
 .coca-navbar .nav-item:nth-child(2) .coca-link { --tile: #a94a38; --tile-text: #fff; }
 .coca-navbar .nav-item:nth-child(3) .coca-link { --tile: #2b6cb0; --tile-text: #fff; }
 .coca-navbar .nav-item:nth-child(4) .coca-link { --tile: #1f7a6d; --tile-text: #fff; }
-.coca-navbar .nav-item:nth-child(5) .coca-link { --tile: #e6c260; --tile-text: #000; } --tile-text: #fff; }
+.coca-navbar .nav-item:nth-child(5) .coca-link { --tile: #e6c260; --tile-text: #000; }
 
-.gaudi-navbar .navbar-nav .nav-link:hover,
-.gaudi-navbar .navbar-nav .nav-link:focus-visible {
+.coca-navbar .coca-link:hover,
+.coca-navbar .coca-link:focus-visible {
     background-color: var(--tile);
     color: var(--tile-text);
-    border-radius: 8px 30px 8px 30px;  
+    border-radius: 8px 30px 8px 30px;
     box-shadow: 0 0 12px var(--tile);
 }
 
@@ -76,8 +75,6 @@ body {
     border-radius: 18px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
 }
-
-.coca-navbar { background: red !important; }
 
 .content-wrapper h2 {
     color: #e6c260;
