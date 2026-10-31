@@ -77,6 +77,8 @@ body {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
 }
 
+.coca-navbar { background: red !important; }
+
 .content-wrapper h2 {
     color: #e6c260;
     font-family: 'Playfair Display', serif;
