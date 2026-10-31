@@ -8,28 +8,27 @@ body {
     height: 400px;
     object-fit: cover;
 }
-
 .content-wrapper {
-    background-color: rgba(255, 255, 255, 0.90);
-    color: #2c2c2c;
-    border: 2px solid #e6c260;
+    background-color: #f4f8fb;
+    color: #1a202c;
+    border: 2px solid #2b6cb0;
     border-radius: 15px;
 }
 
 .accordion-button {
-    background-color: #fdfaf3;
-    color: #333333;
+    background-color: #e2e8f0;
+    color: #1a202c;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #e6c260;
-    color: #000000;
+    background-color: #2b6cb0;
+    color: #ffffff;
     font-weight: bold;
 }
 
 #carouselExample {
-    background-color: #000000;
-    border: 2px solid #e6c260 !important;
+    background-color: #1a202c;
+    border: 3px solid #e6c260 !important;
     border-radius: 15px;
 }
 
