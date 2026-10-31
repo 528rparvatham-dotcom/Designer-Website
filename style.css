@@ -181,3 +181,43 @@ h1 {
     font-family: 'Playfair Display', serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+
+.bio-figure {
+    margin: 0 0 1rem;
+}
+
+.bio-img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border: 2px solid #e6c260;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+/* leaf-shaped corners, mirrored on the right block, echoing the navbar */
+.bio-left .bio-img  { border-radius: 70px 12px 70px 12px; }
+.bio-right .bio-img { border-radius: 12px 70px 12px 70px; }
+
+.bio-figure figcaption {
+    font-size: 0.8rem;
+    color: #cfc8b8;
+    margin-top: 0.4rem;
+}
+
+.bio-block h3 {
+    color: #e6c260;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* desktop: push the right block down for the diagonal */
+@media (min-width: 992px) {
+    .bio-right {
+        margin-top: 8rem;
+    }
+}
+
+/* phones: stack, but keep a hint of the diagonal by shifting each block sideways */
+@media (max-width: 991.98px) {
+    .bio-left  { margin-right: 1.5rem; margin-bottom: 2rem; }
+    .bio-right { margin-left: 1.5rem; }
+}
