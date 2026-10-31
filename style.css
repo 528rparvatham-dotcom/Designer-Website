@@ -6,49 +6,66 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.coca-navbar {
+.gaudi-navbar {
+    position: sticky;             
     background-color: rgba(28, 28, 28, 0.95);
-    padding: 12px 20px;
-    border-bottom: 3px solid #e6c260;
+    padding: 12px 20px 18px;      
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-.iconlink {
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
-    font-weight: bold;
+.gaudi-navbar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 8px;
+    background: repeating-linear-gradient(
+        115deg,
+        #e6c260 0 22px,
+        #a94a38 22px 40px,
+        #2b6cb0 40px 64px,
+        #1f7a6d 64px 80px
+    );
+}
+
+.gaudi-brand {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 26px;
+    font-weight: 700;
     color: #e6c260;
-    text-decoration: none;
     letter-spacing: 1px;
 }
 
-.coca-link {
-    font-family: 'Playfair Display', serif;
-    font-size: 15px;
+
+.gaudi-navbar .navbar-nav .nav-link {
+    --tile: #e6c260;
+    --tile-text: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 8px 16px;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 16px;
     font-weight: 600;
-    color: #fdfaf3 !important;
-    background-color: rgba(192, 90, 70, 0.25);
-    padding: 8px 16px !important;
-    border-radius: 20px;
-    border: 1px solid #c05a46;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    white-space: nowrap;
+    color: #fdfaf3;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid var(--tile);
+    border-radius: 30px 8px 30px 8px;   
+    transition: all 0.35s ease;
 }
 
-.coca-link:hover {
-    color: #000000 !important;
-    background-color: #e6c260;
-    border-color: #e6c260;
-    box-shadow: 0 0 12px rgba(230, 194, 96, 0.6);
-}
+.gaudi-navbar .nav-item:nth-child(2) .nav-link { --tile: #a94a38; --tile-text: #fff; }
+.gaudi-navbar .nav-item:nth-child(3) .nav-link { --tile: #2b6cb0; --tile-text: #fff; }
+.gaudi-navbar .nav-item:nth-child(4) .nav-link { --tile: #1f7a6d; --tile-text: #fff; }
 
-.navbar-toggler {
-    border: 1px solid #e6c260;
-}
-
-.navbar-toggler-icon {
-    filter: invert(1);
+.gaudi-navbar .navbar-nav .nav-link:hover,
+.gaudi-navbar .navbar-nav .nav-link:focus-visible {
+    background-color: var(--tile);
+    color: var(--tile-text);
+    border-radius: 8px 30px 8px 30px;  
+    box-shadow: 0 0 12px var(--tile);
 }
 
 .content-wrapper {
@@ -157,4 +174,10 @@ body {
 .work-caption p {
     color: #e2e8f0;
     margin-bottom: 0;
+}
+
+h1 {
+    color: #e6c260;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
