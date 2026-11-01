@@ -369,7 +369,6 @@ h1 {
     .legacy-block-right { margin-left: 1.5rem; }
 }
 
-/* Footer Container */
 footer .content-wrapper {
     background-color: rgba(28, 28, 28, 0.90);
     border: 2px solid #e6c260;
@@ -377,7 +376,6 @@ footer .content-wrapper {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
 }
 
-/* Link Hover States & Accessibility Contrast */
 footer a.text-light {
     color: #fdfaf3 !important;
     transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -393,7 +391,6 @@ footer a[style*="#c05a46"]:hover {
     text-decoration: underline !important;
 }
 
-/* Horizontal Rule Accent */
 footer hr {
     border-color: rgba(230, 194, 96, 0.3) !important;
     opacity: 1;
